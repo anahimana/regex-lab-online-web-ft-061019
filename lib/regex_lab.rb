@@ -21,10 +21,6 @@ end
 
 def valid_phone_number?(phone)
   binding.pry
-  phone.scan(/\b^([0-9]{10})$\b/)
+  if 
 end
-
-["2438894546"].each {|n| puts valid_phone_number?(n)}
-["(718)891-1313"].each {|n| puts valid_phone_number?(n)}
-# ["(718)891-1313", "234 435 9978", "(800)4261134"].each {|n| puts valid_phone_number?(n)}
 
