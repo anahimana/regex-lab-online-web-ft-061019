@@ -20,7 +20,7 @@ def first_word_capitalized_and_ends_with_punctuation?(text)
 end
 
 def valid_phone_number?(phone)
-  phone.match(/\b^([0-9]{10})$\b/)
+  phone.scan(/\b^([0-9]{10})$\b/)
 end
 
 ["2438894546"].each {|n| puts valid_phone_number?(n)}
